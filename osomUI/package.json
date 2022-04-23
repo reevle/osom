@@ -1,0 +1,35 @@
+{
+  "name": "osom-ui",
+  "version": "0.0.1",
+  "author": "Ilvir Zakiryanov <zakilvir@gmail.com>",
+  "main": "./dist/osom-ui.umd.js",
+  "module": "./dist/osom-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/osom-ui.es.js",
+      "require": "./dist/osom-ui.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "unpkg": "./dist/osom-ui.umd.js",
+  "jsdelivr": "./dist/osom-ui.umd.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/js": "^6.5.95",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "sass": "^1.49.0",
+    "vite": "^2.7.2"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
